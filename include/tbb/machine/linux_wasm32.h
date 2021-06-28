@@ -83,3 +83,4 @@ static inline void __TBB_machine_and( volatile void *ptr, uintptr_t addend ) {
 #define __TBB_USE_GENERIC_RELAXED_LOAD_STORE                1
 #define __TBB_USE_GENERIC_SEQUENTIAL_CONSISTENCY_LOAD_STORE 1
 
+#define __TBB_Yield() emscripten_thread_sleep(0.1)
